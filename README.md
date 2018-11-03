@@ -6,7 +6,7 @@
 ## Para executar o app localmente
 
 1. [Instalar Node.js][]
-+ cd no diret'roio raiz do projeto
++ cd no diretorio raiz do projeto
 + Execute `npm install` para instalar as dependências do app
 + Altere o aquivo config/bot.js e coloque as credenciais e workspace_id do conversation nas lilnhas à seguir:
     
@@ -17,4 +17,4 @@
 + Execute `npm start` para o iniciar o app
 + Acesse a aplicação no browser no link <http://localhost:3000>
 
-+ [Instale Node.js]: https://nodejs.org/en/download/
+[Instale Node.js]: https://nodejs.org/en/download/
