@@ -3,6 +3,6 @@ applications:
   memory: 512M
   instances: 1
   domain: mybluemix.net
-  name: #app name
-  host: #host name
+  name: desafio-morty
+  host: bot-guerreiro-desafio-morty-solutis-2018
   disk_quota: 1024M

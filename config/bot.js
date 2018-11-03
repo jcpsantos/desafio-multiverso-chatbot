@@ -11,7 +11,7 @@
  *
  */
 var watson = require('watson-developer-cloud');
-var CONVERSATION_NAME = "Conversation-Demo"; // conversation name goes here.
+var CONVERSATION_NAME = "Watson Assistant (anteriormente Conversation)-9o"; // conversation name goes here.
 var fs = require('fs');
 // load local VCAP configuration
 var appEnv = null;
@@ -25,7 +25,7 @@ var conversationWorkspace, conversation;
         url: "https://gateway.watsonplatform.net/conversation/api"
         , username: "<username>" // Replace <username>, including "<" and ">"
         , password: "<password>" // Replace <password>, including "<" and ">"
-        , version_date: '2017-04-10'
+        , version_date: '2018-11-03'
         , version: 'v1'
     });
     // check if the workspace ID is specified in the environment
