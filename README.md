@@ -1,48 +1,32 @@
-[![N|Solid](http://solutis.com.br/images/logo.png)](http://solutis.com.br)
+# Chatbot com Watson
 
-# NOSSO DESAFIO MORTY - CHATBOT
-“Cada cabeça um universo” de infinitas possibilidades. Imagine-se em um multiverso inóspito onde os maiores guerreiros estão congelados em cápsulas e poderão ser acionados para batalhas a qualquer momento. O próximo guerreiro a ser escolhido tem a missão de impedir um novo ataque utilizando seus conhecimentos em tecnologia. Nesse cenário, você é um guerreiro congelado e o chatbot deve fazer com que você seja escolhido para a missão. Para isso, seu chatbot deverá saber responder no mínimo as seguintes questões:
-- nome (ex: como se chama?, qual seu nome guerreiro?... )
-- idade/data de nascimento (ex: quantos anos você tem?, qual sua idade?...)
-- habilidades especiais: (ex: qual seu diferencial de batalha?, quais são suas habilidades especiais?...)
-- experiências em combate (ex: Quais batalhas participou?, quais lições aprendidas na batalha?..)
-- resumo (ex: qual o resumo do guerreiro?, fale sobre você?...)
-
-Considere também que as características de seu personagem tenham alguma relação com você na vida real, assim a gente já lhe conhece melhor.
-
-## REGRAS GERAIS
-Estamos interessados em ver como você utiliza suas habilidades e novas tecnologias para se apresentar para o mercado. Que jeito melhor do que fazer um software que fale por você? Queremos que você nos apresente um chatbot que responda algumas perguntas sobre seu perfil. Aqui vão as regras.
-- Faça a [cópia](https://help.github.com/articles/fork-a-repo/) do repositório (fork), desenvolva e submeta uma [solicitação de mudança](https://help.github.com/articles/creating-a-pull-request/) (pull request) no branch master.
-- Em caso de dúvidas basta abrir uma issue com sua pergunta (aqui mesmo no github) que nossa equipe irá respondê-lo assim que possível.
-- Caso ainda não tenha, crie uma conta gratuita na plataforma de nuvem da IBM (http://bluemix.com) e ative o serviço Watson Assistant.
-- Seu chatbot deve ser composto por configuração e contexto no Watson e uma interface que nos permita conversar com ele. 
-- Para a interface, podem ser utilizados pacotes prontos que podem ser facilmente encontrados na internet (inclusive no próprio site da IBM).
-- O contexto configurado no Watson (entidades, intenções e diálogos) também deve ser exportado e enviado junto com a interface.
-- Seu chatbot deve responder um conjunto mínimo de perguntas, mas não precisa parar por aí.
-- Nas instruções para execução da interface devem estar presentes seu nome e e-mail utilizados no cadastro Gupy
-- POR QUESTÕES DE SEGURANÇA: 
-    - O arquivo .env NÃO deve ser enviado no pull request por conter as credenciais.
-    - As credenciais da API do Watson deverão ser enviadas para o e-mail marx.correia@solutis.com.br, juntamente com seu nome e e-mail cadastrados no Gupy.
+This app is a front-end of a chatbot that uses Watson Conversation. 
+Please do the following steps:
+1) Create a account on https://www.bluemix.net;
+2) Go to Bluemix catalog and create a Watson Conversation service;
+3) Create a conversation as the guidance -->> 
+4) Back to Bluemix catalog and create Continuous Delivery service and follwoing steps -->>
+5) Change the file config/bot.js with your credentials of Watson Conversation and WOrkspace id create, in lines 26, 27 and 32, as the following:
+    username = "xxxx-xxxx-xxxxxx-xxxx";
+    password = "xxxxxxxx";
+    conversationWorkspace = "xxx-xxxxx-xxxxx-xxxxx-xxxx";
 
 
-### PLATAFORMA
-- IBM (Watson Assistant)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/priscillaparodi/youtube-bot)
 
+## Para executar o app localmente
 
-### INTERFACE
-O canal utilizado como interface para o chatbot deve ser uma aplicação Web. Sugerimos as seguintes tecnologias:
-- Node
-- Angular
-- CSS
+1. [Instalar Node.js][]
++ cd no diret'roio raiz do projeto
++ Execute `npm install` para instalar as dependências do app
++ Altere o aquivo config/bot.js e coloque as credenciais e workspace_id do conversation nas lilnhas à seguir:
+    
+    username = "<username>";
+    password = "<password>";
+    conversationWorkspace = "<workspace_id>";
 
++ Execute `npm start` para o iniciar o app
++ Acesse a aplicação no browser no link <http://localhost:6001>
 
-### TESTES
-- Não se aplica.
-
-### BUILD E EXECUÇÃO
-- Envie as instruções para execução da interface e não esqueça das credenciais do Watson. Cuidado com dependências externas não mapeadas que inviabilizem ou dificultem essas atividades.
-- De preferência, utilize um ferramenta como npm ou yarn para realizar as tarefas necessárias de build.
-- Caso deseje, personalize a interface e mostre que tem criatividade (+)
-
-
-# BOA SORTE!
+[Instale Node.js]: https://nodejs.org/en/download/
+"# Conversation-demo" 
